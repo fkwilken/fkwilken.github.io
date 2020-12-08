@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
 body {
+  font-family: Ubuntu;
   background-color: black;
+  color: white;
+  font-size: 18px;
 }
 .logo
 {
@@ -23,11 +29,11 @@ body {
 .rectangle {
   background-color: white;
   width: 200%;
-  height: 2vh;
-  margin-top: 16.5vh;
+  height: 1vh;
+  margin-top: 0vh;
   margin-left: 0px;
   z-index: 1;
-  position: absolute;
+  position: relative;
 }
 h1 {
   color: white;
@@ -36,13 +42,17 @@ h1 {
 
 /* Style the navigation menu */
 .topnav {
+  width: 100vw;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   position: relative;
+  text-align: center;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
+  text-align: left;
+  background-color: #333;
   display: none;
 }
 
@@ -66,7 +76,7 @@ h1 {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #29FA1F; /* #ddd; */
   color: black;
 }
 
@@ -88,28 +98,30 @@ function expandMenu() {
 </script>
 <body>
 
-  <div class="rectangle"></div>
+<!--  <div class="rectangle"></div>
   <div style="margin: auto; text-align: center; z-index: 2;">
-    <img src="https://fkwilken.github.io/logo2.png" class="logo">
+    <img src="logo2.png" class="logo">
   </div>
-
+-->
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Top Navigation Menu -->
   <div class="topnav">
-    <a href="#home" class="active">Logo</a>
+
+    <img src="logo2.png" class="active" style="width:70vw; padding:1vh; padding-bottom: 0px;">
+    <div class="rectangle"> </div>
     <!-- Navigation links (hidden by default) -->
     <div id="myLinks">
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+      <a href="#news">Home</a>
+      <a href="#contact">About Me</a>
+      <a href="#about">Resume</a>
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-
+<p> asdhjfjkashdjklfhasdjklfhasdfjkhasldfhasdlfjhasjkldfhasjkdfh </p>
+<p> Hey Lindsey! </p>
 </body>
 </html>
