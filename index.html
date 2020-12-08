@@ -13,6 +13,15 @@ body {
   color: white;
   font-size: 18px;
 }
+.sidebar {
+  position: absolute;
+  width: 100vw;
+
+}
+.text {
+  width: 80vw;
+  margin: auto;
+}
 .logo
 {
   height: 35vh;
@@ -86,6 +95,11 @@ h1 {
   background-color: #4CAF50;
   color: white;
 }
+.mirrored{
+  transform: rotateY(180deg);
+  float: right;
+}
+
 </style>
 <script>
 function expandMenu() {
@@ -105,23 +119,42 @@ function expandMenu() {
   </div>
 -->
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <div class="sidebar">
+    <img src="images/circuit.png" style="width: 8vw;">
+
+    <img src="images/circuit.png" class="mirrored" style="width: 8vw;">
+  </div>
 
   <!-- Top Navigation Menu -->
   <div class="topnav">
 
     <img src="https://fkwilken.github.io/images/logo2.png" class="active" style="width:70vw; padding:1vh; padding-bottom: 0px;">
     <div class="rectangle"> </div>
-    <!-- Navigation links (hidden by default) -->
+
+
     <div id="myLinks">
       <a href="#news">Home</a>
       <a href="#contact">About Me</a>
       <a href="#about">Resume</a>
     </div>
+
+
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
       <i class="fa fa-bars"></i>
     </a>
+
   </div>
-<p>Welcome to my site, hosted on Github! </p>
+
+
+
+<div class="text">
+  <p>Welcome to my site, hosted on Github! </p>
+
+</div>
+
+
+
+
 </body>
 </html>
